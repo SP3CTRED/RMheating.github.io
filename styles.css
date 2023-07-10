@@ -1,175 +1,161 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Global styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #333;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-  
-  .phone {
-    color: #fff;
-  }
-  
-  /* Navigation styles */
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  /* Home section styles */
-  #home {
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  /* Services section styles */
-  #services {
-    padding: 50px;
-    background-color: #f8f8f8;
-  }
-  
-  #services h2 {
-    margin-bottom: 30px;
-  }
-  
-  #services ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  #services ul li {
-    margin-bottom: 15px;
-  }
-  
-  /* Gallery section styles */
-  #gallery {
-    padding: 50px;
-    background-color: #fff;
-  }
-  
-  .gallery {
-    position: relative;
-  }
-  
-  .gallery img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 50%;
-    border: none;
-    z-index: 1;
-  }
-  
-  .prev-btn {
-    left: 20px;
-  }
-  
-  .next-btn {
-    right: 20px;
-  }
-  
-  .prev-btn:before,
-  .next-btn:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent rgba(255, 255, 255, 0.8) transparent transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .prev-btn:before {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  
-  .prev-btn:hover,
-  .next-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* About section styles */
-  #about {
-    padding: 50px;
-    background-color: #f8f8f8;
-  }
-  
-  #about h2 {
-    margin-bottom: 30px;
-  }
-  
-  #about p {
-    line-height: 1.6;
-  }
-  
-  /* Contact section styles */
-  #contact {
-    padding: 50px;
-    background-color: #fff;
-  }
-  
-  #contact h2 {
-    margin-bottom: 30px;
-  }
-  
-  #contact ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  #contact ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* Services section styles */
+#services {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Gallery section styles */
+#gallery {
+  background-color: #f1f1f1;
+  padding: 80px 0;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+/* Contact section styles */
+#contact {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

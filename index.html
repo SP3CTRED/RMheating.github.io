@@ -1,88 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <link rel="
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your HVAC Business</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Your HVAC Business Logo">
-    </div>
-    <div class="phone">
-      Phone: 123-456-7890
-    </div>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="home">
-    <h2>Welcome to Your HVAC Business</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat turpis eu sapien hendrerit,</p>
+    <div class="hero">
+      <h1>Welcome to Your HVAC Business</h1>
+      <p>Providing quality heating, ventilation, and air conditioning services.</p>
+      <a href="#contact" class="cta-button">Contact Us</a>
+    </div>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Heating system installation and repair</li>
-      <li>Air conditioning system installation and repair</li>
-      <li>Ventilation system installation and repair</li>
-      <li>Indoor air quality improvement</li>
-      <li>Maintenance plans</li>
-    </ul>
-  </section>
-
-  <section id="gallery">
-    <h2>Image Gallery</h2>
-    <div class="gallery">
-      <img src="image1.jpg" alt="Image 1">
-      <img src="image2.jpg" alt="Image 2">
-      <img src="image3.jpg" alt="Image 3">
-      <!-- Add more images here -->
-      <div class="prev-btn">&#8249;</div>
-      <div class="next-btn">&#8250;</div>
+    <div class="service-card">
+      <img src="service1.jpg" alt="Service 1">
+      <h3>Service 1</h3>
+      <p>Description of service 1.</p>
+    </div>
+    <div class="service-card">
+      <img src="service2.jpg" alt="Service 2">
+      <h3>Service 2</h3>
+      <p>Description of service 2.</p>
+    </div>
+    <div class="service-card">
+      <img src="service3.jpg" alt="Service 3">
+      <h3>Service 3</h3>
+      <p>Description of service 3.</p>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat turpis eu sapien hendrerit,</p>
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="slider">
+      <img src="slide1.jpg" alt="Slide 1">
+      <img src="slide2.jpg" alt="Slide 2">
+      <img src="slide3.jpg" alt="Slide 3">
+      <img src="slide4.jpg" alt="Slide 4">
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>For inquiries or to schedule a service, please contact us using the information below:</p>
-    <ul>
-      <li>Phone: 123-456-7890</li>
-      <li>Email: info@yourhvacbusiness.com</li>
-      <li>Address: 123 Main St, City, State ZIP</li>
-    </ul>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2023 Your HVAC Business. All rights reserved.
+    <p>&copy; 2023 Your HVAC Business. All rights reserved.</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.gallery').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        prevArrow: '<div class="prev-btn">&#8249;</div>',
-        nextArrow: '<div class="next-btn">&#8250;</div>'
-      });
-    });
-  </script>
+  <script src="slider.js"></script>
 </body>
+
 </html>
